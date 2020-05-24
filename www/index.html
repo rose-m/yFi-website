@@ -12,12 +12,26 @@
     <body>
         <div id="wrapper">
             <header id="header">
-                The header
+                <a class="brand blendable-image" href="">
+                    <img class="brand__image" src="images/coderose-light.png" alt="coderose.io">
+                    <img class="brand__image" src="images/coderose-dark.png" alt="coderose.io">
+                </a>
+
+                <div class="theme-switcher">
+                    Theme
+                </div>
             </header>
             
             <section id="hero">
-                <h1>yFi.</h1>
-                <h2>Don't drop out. Stay connected.</h2>
+                <img class="hero__image" src="images/yfi-logo.png" alt="yFi - Don't drop out. Stay connected.">
+                <div class="hero__text">
+                    <h1 class="hero__title">yFi.</h1>
+                    <h2 class="hero__subtitle">Don't drop out. Stay connected.</h2>
+
+                    <a href="">
+                        <img class="hero__app-store" src="images/app-store-light.svg" alt="Download on the Mac App Store">
+                    </a>
+                </div>
             </section>
             
             <main id="main">
@@ -30,7 +44,10 @@
                         </p>
                     </div>
 
-                    <img class="feature__img" src="https://via.placeholder.com/350x360" alt="">
+                    <div class="blendable-image feature__img">
+                        <img src="https://via.placeholder.com/350x360&text=light" alt="">
+                        <img src="https://via.placeholder.com/350x360&text=dark" alt="">
+                    </div>
                 </article>
             
                 <article class="feature feature--left-image">
@@ -42,7 +59,10 @@
                         </p>
                     </div>
 
-                    <img class="feature__img" src="https://via.placeholder.com/330x168" alt="">
+                    <div class="blendable-image feature__img">
+                        <img src="https://via.placeholder.com/330x168&text=light" alt="">
+                        <img src="https://via.placeholder.com/330x168&text=dark" alt="">
+                    </div>
                 </article>
             </main>
         </div>
