@@ -6,7 +6,8 @@
 
         <title>yFi by coderose</title>
 
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/theme-switcher.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -18,7 +19,12 @@
                 </a>
 
                 <div class="theme-switcher">
-                    Theme
+                    <div class="theme-switcher__icon">M</div>
+                    <label class="theme-switcher__toggle">
+                        <input id="theme-switcher" type="checkbox" class="theme-switcher__toggle__input" />
+                        <span class="theme-switcher__toggle__circle"></span>
+                    </label>
+                    <div class="theme-switcher__icon">S</div>
                 </div>
             </header>
             
@@ -71,5 +77,16 @@
         <footer id="footer">
             <p>Copyright &copy; 2020 coderose.io</p>
         </footer>
+
+        <script>
+            const themeSwitcher = document.querySelector('#theme-switcher');
+            themeSwitcher.onchange = function () {
+                if (this.checked) {
+                    document.body.classList.add('dark');
+                } else {
+                    document.body.classList.remove('dark');
+                }
+            };
+        </script>
     </body>
 </html>
