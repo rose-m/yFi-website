@@ -1,92 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>yFi by coderose</title>
+    <title>yFi by coderose</title>
 
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="stylesheet" type="text/css" href="css/theme-switcher.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="wrapper">
-            <header id="header">
-                <a class="brand blendable-image" href="">
-                    <img class="brand__image" src="images/coderose-light.png" alt="coderose.io">
-                    <img class="brand__image" src="images/coderose-dark.png" alt="coderose.io">
-                </a>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/theme-switcher.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <a class="brand blendable-image" href="">
+          <img
+            class="brand__image"
+            src="images/coderose-light.png"
+            alt="coderose.io"
+          />
+          <img
+            class="brand__image"
+            src="images/coderose-dark.png"
+            alt="coderose.io"
+          />
+        </a>
 
-                <div class="theme-switcher">
-                    <div class="theme-switcher__icon">M</div>
-                    <label class="theme-switcher__toggle">
-                        <input id="theme-switcher" type="checkbox" class="theme-switcher__toggle__input" />
-                        <span class="theme-switcher__toggle__circle"></span>
-                    </label>
-                    <div class="theme-switcher__icon">S</div>
-                </div>
-            </header>
-            
-            <section id="hero">
-                <img class="hero__image" src="images/yfi-logo.png" alt="yFi - Don't drop out. Stay connected.">
-                <div class="hero__text">
-                    <h1 class="hero__title">yFi.</h1>
-                    <h2 class="hero__subtitle">Don't drop out. Stay connected.</h2>
-
-                    <a class="blendable-image" href="">
-                        <img class="hero__app-store" src="images/app-store-light.svg" alt="Download on the Mac App Store">
-                        <img class="hero__app-store" src="images/app-store-dark.svg" alt="Download on the Mac App Store">
-                    </a>
-                </div>
-            </section>
-            
-            <main id="main">
-                <article class="feature">
-                    <div class="feature__text">
-                        <h2>Lives in your menu bar.</h3>
-                        <hr class="feature__hr">
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis 
-                        </p>
-                    </div>
-
-                    <div class="blendable-image feature__img">
-                        <img src="https://via.placeholder.com/350x360&text=light" alt="">
-                        <img src="https://via.placeholder.com/350x360&text=dark" alt="">
-                    </div>
-                </article>
-            
-                <article class="feature feature--left-image">
-                    <div class="feature__text">
-                        <h2>Attaches to your wrist</h3>
-                        <hr class="feature__hr">
-                        <p>
-                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et.
-                        </p>
-                    </div>
-
-                    <div class="blendable-image feature__img">
-                        <img src="https://via.placeholder.com/330x168&text=light" alt="">
-                        <img src="https://via.placeholder.com/330x168&text=dark" alt="">
-                    </div>
-                </article>
-            </main>
+        <div class="theme-switcher">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="theme-switcher__icon theme-switcher__icon--light"
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7"
+            />
+          </svg>
+          <label class="theme-switcher__toggle">
+            <input
+              id="theme-switcher"
+              type="checkbox"
+              class="theme-switcher__toggle__input"
+            />
+            <span class="theme-switcher__toggle__circle"></span>
+          </label>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="theme-switcher__icon theme-switcher__icon--dark"
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M16.2 4a9.03 9.03 0 1 0 3.9 12a6.5 6.5 0 1 1 -3.9 -12" />
+          </svg>
         </div>
-            
-        <footer id="footer">
-            <p>Copyright &copy; 2020 coderose.io</p>
-        </footer>
+      </header>
 
-        <script>
-            const themeSwitcher = document.querySelector('#theme-switcher');
-            themeSwitcher.onchange = function () {
-                if (this.checked) {
-                    document.body.classList.add('dark');
-                } else {
-                    document.body.classList.remove('dark');
-                }
-            };
-        </script>
-    </body>
+      <section id="hero">
+        <img
+          class="hero__image"
+          src="images/yfi-logo.png"
+          alt="yFi - Don't drop out. Stay connected."
+        />
+        <div class="hero__text">
+          <h1 class="hero__title">yFi.</h1>
+          <h2 class="hero__subtitle">Don't drop out. Stay connected.</h2>
+
+          <a class="blendable-image" href="">
+            <img
+              class="hero__app-store"
+              src="images/app-store-light.svg"
+              alt="Download on the Mac App Store"
+            />
+            <img
+              class="hero__app-store"
+              src="images/app-store-dark.svg"
+              alt="Download on the Mac App Store"
+            />
+          </a>
+        </div>
+      </section>
+
+      <main id="main">
+        <article class="feature">
+          <div class="feature__text">
+            <h3>Lives in your menu bar.</h3>
+            <hr class="feature__hr" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis
+            </p>
+          </div>
+
+          <div class="blendable-image feature__img">
+            <img src="https://via.placeholder.com/350x360&text=light" alt="" />
+            <img src="https://via.placeholder.com/350x360&text=dark" alt="" />
+          </div>
+        </article>
+
+        <article class="feature feature--left-image">
+          <div class="feature__text">
+            <h3>Attaches to your wrist</h3>
+            <hr class="feature__hr" />
+            <p>
+              Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et.
+            </p>
+          </div>
+
+          <div class="blendable-image feature__img">
+            <img src="https://via.placeholder.com/330x168&text=light" alt="" />
+            <img src="https://via.placeholder.com/330x168&text=dark" alt="" />
+          </div>
+        </article>
+      </main>
+    </div>
+
+    <footer id="footer">
+      <p>Copyright &copy; 2020 coderose.io</p>
+    </footer>
+
+    <script>
+      const themeSwitcher = document.querySelector("#theme-switcher");
+      themeSwitcher.onchange = function () {
+        if (this.checked) {
+          document.body.classList.add("dark");
+        } else {
+          document.body.classList.remove("dark");
+        }
+      };
+    </script>
+  </body>
 </html>
