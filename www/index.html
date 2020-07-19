@@ -14,6 +14,14 @@
     />
   </head>
   <body>
+    <script>
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        document.body.classList.add("dark");
+      }
+    </script>
     <div id="wrapper">
       <header id="header">
         <a class="brand blendable-image" href="">
@@ -152,6 +160,11 @@
 
     <script>
       const themeSwitcher = document.querySelector("#theme-switcher");
+
+      if (document.body.classList.contains("dark")) {
+        themeSwitcher.checked = true;
+      }
+
       themeSwitcher.onchange = function () {
         if (this.checked) {
           document.body.classList.add("dark");
