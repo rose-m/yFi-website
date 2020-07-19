@@ -15,7 +15,7 @@ body {
   --background-color: #ffffff;
   --brand-color: #5bd8bc;
   --text-color: #252e2d;
-  --box-shadow-color: rgba(0, 0, 0, 0.07);
+  --box-shadow-color: rgba(0, 0, 0, 0.25);
 
   --animation-fast: 0.5s;
   --animation-slow: 1s;
@@ -24,7 +24,7 @@ body {
 body.dark {
   --background-color: #404040;
   --text-color: #ffffff;
-  --box-shadow-color: rgba(37, 46, 45, 0.42);
+  --box-shadow-color: rgba(37, 46, 45, 0.75);
 }
 
 .hidden-light,
@@ -49,6 +49,7 @@ body.dark .hidden-light {
   position: relative;
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   animation: fadeIn calc(2 * var(--animation-slow));
 }
@@ -132,8 +133,6 @@ body {
 .brand__image {
   height: 24px;
 }
-.theme-switcher {
-}
 
 #hero {
   display: flex;
@@ -169,13 +168,7 @@ body {
   padding: var(--padding-base);
 
   background: var(--background-color);
-  border-radius: var(--border-radius);
-
-  transition: box-shadow var(--animation-slow),
-    background-color var(--animation-fast);
-}
-.feature:hover {
-  box-shadow: 0 3px 32px 0 var(--box-shadow-color);
+  transition: background-color var(--animation-fast);
 }
 .feature + .feature {
   margin-top: var(--padding-base);
@@ -183,7 +176,11 @@ body {
 .feature__img {
   flex: 1 1 auto;
   max-width: 330px;
+}
+.feature__img img {
   border-radius: var(--border-radius);
+  box-shadow: 0 3px 12px 0 var(--box-shadow-color);
+  transition: box-shadow var(--animation-fast);
 }
 .feature__text {
   width: 330px;
