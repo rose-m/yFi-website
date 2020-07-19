@@ -186,6 +186,19 @@ body {
   width: 330px;
   text-align: right;
 }
+.feature__text ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.feature__text ul li::before {
+  content: "●";
+  color: var(--brand-color);
+  margin-right: 1em;
+}
+.feature__text ul li + li {
+  margin-top: 0.5em;
+}
 .feature__hr {
   border: none;
   border-bottom: 5px solid var(--brand-color);
