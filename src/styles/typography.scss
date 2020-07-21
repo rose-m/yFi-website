@@ -1,0 +1,11 @@
+h1 {
+  font-size: var(--font-size-huge);
+}
+h2 {
+  font-size: var(--font-size-large);
+}
+h1,
+h2 {
+  font-weight: 600;
+  line-height: 1.6em;
+}

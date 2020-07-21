@@ -1,0 +1,70 @@
+.theme-switcher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  --toggle-width: 24px;
+  --toggle-height: 14px;
+  --toggle-border: 2px;
+  --toggle-circle-size: 12px;
+
+  --toggle-dark-color: #badcf4;
+  --toggle-light-color: #ddbe0a;
+
+  &__icon {
+    height: 1.3em;
+
+    &--dark {
+      stroke: var(--toggle-dark-color);
+    }
+    &--dark path {
+      fill: var(--toggle-dark-color);
+    }
+    &--light {
+      stroke: var(--toggle-light-color);
+    }
+    &--light circle {
+      fill: var(--toggle-light-color);
+    }
+  }
+
+  &__toggle {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 0 0.5em;
+    padding: 0 2px;
+    width: var(--toggle-width);
+    height: var(--toggle-height);
+    border-radius: var(--toggle-circle-size);
+    border: var(--toggle-border) solid var(--text-color);
+
+    cursor: pointer;
+
+    &__input {
+      display: none;
+    }
+
+    &__circle {
+      position: relative;
+      display: block;
+      width: var(--toggle-circle-size);
+      height: var(--toggle-circle-size);
+      border-radius: 50%;
+      background: var(--text-color);
+
+      transition: transform var(--animation-fast) ease-out,
+        left var(--animation-fast) ease-out;
+
+      left: 0%;
+      transform: translate(0%);
+
+      .dark & {
+        left: 100%;
+        transform: translate(-100%);
+      }
+    }
+  }
+}

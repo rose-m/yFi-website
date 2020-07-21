@@ -1,0 +1,26 @@
+.blendable-image {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  animation: fadeIn calc(2 * var(--animation-slow));
+}
+.blendable-image img {
+  position: static;
+  max-width: 100%;
+  max-height: 100%;
+
+  opacity: 1;
+  transition: opacity var(--animation-slow);
+}
+.blendable-image img + img {
+  transform: translate(-100%);
+  opacity: 0;
+}
+body.dark .blendable-image img {
+  opacity: 0;
+}
+body.dark .blendable-image img + img {
+  opacity: 1;
+}

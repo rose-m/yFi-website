@@ -1,0 +1,46 @@
+.hidden-light,
+body.dark .hidden-dark {
+  display: none;
+}
+.hidden-dark,
+body.dark .hidden-light {
+  display: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+
+  font-size: var(--font-size);
+  line-height: 1.6em;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+  transition: background-color var(--animation-fast),
+    color var(--animation-fast);
+}
+
+#wrapper {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: var(--content-width);
+
+  padding-bottom: var(--padding-base);
+}

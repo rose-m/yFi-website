@@ -1,0 +1,27 @@
+#hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding: calc(200px - var(--padding-base)) 0;
+}
+
+.hero {
+  &__image {
+    height: 110px;
+    margin-top: calc(0.2 * var(--font-size-huge));
+    margin-right: calc(2 * var(--padding-base));
+  }
+  &__title {
+    margin: 0;
+    line-height: 1.2em;
+  }
+  &__subtitle {
+    margin: var(--padding-base) 0 0;
+    font-weight: 500;
+  }
+  &__app-store {
+    margin-top: var(--padding-base);
+    height: 50px;
+  }
+}

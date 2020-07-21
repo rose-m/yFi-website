@@ -1,0 +1,12 @@
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: var(--padding-base);
+}
+
+.brand__image {
+  height: 24px;
+}

@@ -1,0 +1,16 @@
+#footer {
+  flex: 0 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  padding: calc(2 * var(--padding-base)) var(--padding-base);
+  width: 100%;
+  max-width: var(--content-width);
+
+  font-size: var(--font-size-small);
+  font-weight: 300;
+  text-align: center;
+}

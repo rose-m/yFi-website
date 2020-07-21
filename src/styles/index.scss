@@ -1,4 +1,13 @@
+@import "./variables.scss";
+@import "./animations.scss";
 
-body {
-    background: red;
-}
+@import "./typography.scss";
+@import "./layout.scss";
+
+@import "./elements/blendable-image.scss";
+@import "./elements/theme-switcher.scss";
+
+@import "./blocks/header.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/features.scss";
+@import "./blocks/footer.scss";
