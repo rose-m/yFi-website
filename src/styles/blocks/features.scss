@@ -50,10 +50,24 @@
     border-bottom: 5px solid var(--brand-color);
   }
 
-  &--left-image {
-    flex-flow: row-reverse;
-    .feature__text {
+  @media screen and (max-width: $breakpoint-mobile) {
+    flex-flow: column-reverse;
+
+    &__text {
       text-align: left;
+    }
+
+    &__img {
+      margin: 0 0 1.5em;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-mobile + 1) {
+    &--left-image {
+      flex-flow: row-reverse;
+      .feature__text {
+        text-align: left;
+      }
     }
   }
 }

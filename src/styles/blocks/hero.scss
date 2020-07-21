@@ -4,13 +4,34 @@
   justify-content: center;
 
   padding: calc(200px - var(--padding-base)) 0;
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    align-items: center;
+    padding: 6em var(--padding-base);
+
+    .blendable-image {
+      margin-left: calc(-50% - var(--padding-base));
+      transform: translate(50%, 0);
+    }
+  }
 }
 
 .hero {
+  @media screen and (max-width: $breakpoint-mobile) {
+    &__text {
+      text-align: center;
+    }
+  }
+
   &__image {
     height: 110px;
     margin-top: calc(0.2 * var(--font-size-huge));
     margin-right: calc(2 * var(--padding-base));
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      margin: 0 0 var(--padding-base) 0;
+    }
   }
   &__title {
     margin: 0;
