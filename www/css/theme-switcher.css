@@ -34,6 +34,7 @@
   flex-direction: row;
   align-items: center;
 
+  margin: 0 0.5em;
   padding: 0 2px;
   width: var(--toggle-width);
   height: var(--toggle-height);
