@@ -11,8 +11,8 @@
     padding: 6em var(--padding-base);
 
     .blendable-image {
-      margin-left: calc(-50% - var(--padding-base));
-      transform: translate(50%, 0);
+      margin-left: 50%;
+      transform: translate(-50%, 0);
     }
   }
 }
