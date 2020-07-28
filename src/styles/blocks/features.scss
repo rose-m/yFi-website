@@ -17,7 +17,7 @@
     flex: 1 1 auto;
     max-width: 330px;
 
-    img {
+    img, video {
       border-radius: var(--border-radius);
       box-shadow: 0 3px 12px 0 var(--box-shadow-color);
       transition: box-shadow var(--animation-fast);
