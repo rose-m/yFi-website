@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:scss": "sass src/styles/index.scss www/css/styles.css",
-    "dist": "cd www && zip -r ../deployment.zip . -x \"*.map\" -x \".DS_Store\" -x \"*/.DS_Store\" && cd .."
+    "dist": "npm run dev:scss && cd www && zip -r ../deployment.zip . -x \"*.map\" -x \".DS_Store\" -x \"*/.DS_Store\" && cd .."
   },
   "author": "Michael Rose",
   "license": "ISC",
