@@ -11,6 +11,6 @@
   "author": "Michael Rose",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.26.10"
+    "sass": "^1.66.1"
   }
 }
